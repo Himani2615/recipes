@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<script type='text/javascript' src='config.js'></script>
+
+<body>
+    <header>
+        <!-- Header content here -->
+    </header>
+
+    <div class="main">
+        <br>
+
+        <h1>Recipe Generator</h1>
+        <br>
+
+        <main class="one">
+            
+            <img src="pexels-jonathan-borba-19247564.jpg" >
+            
+            <section id="preferences">
+                <br>
+                <form id="preferences-form">
+                    <div class="form-group">
+                        <h2>Choose Your Preferences</h2>
+                    </div>
+                    <div class="form-group">
+                        <label for="cuisine-type">Cuisine Type:</label>
+                        <select id="cuisine-type" name="cuisine-type">
+                            <option value="">Any</option>
+                            <option value="American">American</option>
+                            <option value="Asian">Asian</option>
+                            <option value="British">British</option>
+                            <option value="Caribbean">Caribbean</option>
+                            <option value="Central Europe">Central Europe</option>
+                            <option value="Chinese">Chinese</option>
+                            <option value="Eastern Europe">Eastern Europe</option>
+                            <option value="French">French</option>
+                            <option value="Indian">Indian</option>
+                            <option value="Italian">Italian</option>
+                            <option value="Japanese">Japanese</option>
+                            <option value="Kosher">Kosher</option>
+                            <option value="Mediterranean">Mediterranean</option>
+                            <option value="Mexican">Mexican</option>
+                            <option value="Middle Eastern">Middle Eastern</option>
+                            <option value="Nordic">Nordic</option>
+                            <option value="South American">South American</option>
+                            <option value="South East Asian">South East Asian</option>
+                            <!-- Cuisine type options -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="meal-type">Meal Type:</label>
+                        <select id="meal-type" name="meal-type">
+                            <option value="">Any</option>
+                            <option value="Breakfast">Breakfast</option>
+                            <option value="Dinner">Dinner</option>
+                            <option value="Lunch">Lunch</option>
+                            <option value="Snack">Snack</option>
+                            <option value="Teatime">Teatime</option>
+                            <!-- Meal type options -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="ingredients">Ingredients:</label>
+                        <textarea id="ingredients" rows="7" cols="35" name="ingredients"
+                            placeholder="Enter comma-separated ingredients:"></textarea>
+                    </div>
+                    <button type="submit" class="button1"> Generate Recipes </button>
+                </form>
+            </section>
+            <br>
+            <br>
+            <br>
+
+        </main>
+
+            <section class="recipes">
+                <div id="recipe-container">
+                    <!-- Generated recipes will be displayed here -->
+
+                </div>
+            </section>
+
+        
+            <hr>
+            <br>
+            <br>
+            <h2 class="rand">Recommended Recipes</h2>
+            <br><br>
+            <div class="random">
+                <!-- Random recipes will be displayed here -->
+            </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Recipe Generator. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
